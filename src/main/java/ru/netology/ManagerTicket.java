@@ -3,7 +3,7 @@ package ru.netology;
 
 import java.util.Arrays;
 
-public class ManagerTicket{
+public class ManagerTicket {
     private RepositoryTicket repo;
 
 
@@ -12,9 +12,8 @@ public class ManagerTicket{
     }
 
 
-
-        public AviaTicket[] searchBy(String text) {
-            AviaTicket[] result = new AviaTicket[0];
+    public AviaTicket[] searchBy(String text) {
+        AviaTicket[] result = new AviaTicket[0];
         for (AviaTicket ticket : repo.findAll()) {
             if (matches(ticket, text)) {
                 AviaTicket[] tmp = new AviaTicket[result.length + 1];
@@ -27,15 +26,15 @@ public class ManagerTicket{
         return result;
     }
 
-        public boolean matches(AviaTicket ticket, String search) {
-            AviaTicket Ticket = (AviaTicket) ticket;
-            if (ticket.getEntry().contains(search)) {
-                return true;
-            }
-            if (ticket.getExit().contains(search)) {
-                return true;
-            }
-            return false;
+    public boolean matches(AviaTicket ticket, String search) {
+        AviaTicket Ticket = (AviaTicket) ticket;
+        if (ticket.getEntry().contains(search)) {
+            return true;
         }
-
+        if (ticket.getExit().contains(search)) {
+            return true;
+        }
+        return false;
     }
+
+}
