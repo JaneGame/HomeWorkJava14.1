@@ -1,4 +1,7 @@
-package ru.netology;
+package ru.netology.repository;
+
+import ru.netology.exception.NotFoundException;
+import ru.netology.domain.AviaTicket;
 
 public class RepositoryTicket {
     private AviaTicket[] items = new AviaTicket[0];

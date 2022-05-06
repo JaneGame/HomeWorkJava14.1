@@ -1,4 +1,4 @@
-package ru.netology;
+package ru.netology.domain;
 
 public class AviaTicket implements Comparable<AviaTicket>{
     private int id;
@@ -37,7 +37,7 @@ public class AviaTicket implements Comparable<AviaTicket>{
 
     @Override
     public int compareTo(AviaTicket o) {
-        AviaTicket t = (AviaTicket) o;
+        AviaTicket t = o;
         return price - t.price;
     }
 }

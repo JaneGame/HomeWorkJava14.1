@@ -1,5 +1,8 @@
-package ru.netology;
+package ru.netology.manager;
 
+
+import ru.netology.repository.RepositoryTicket;
+import ru.netology.domain.AviaTicket;
 
 import java.util.Arrays;
 
@@ -21,8 +24,9 @@ public class ManagerTicket {
                 tmp[tmp.length - 1] = ticket;
                 result = tmp;
             }
-            Arrays.sort(result);
+
         }
+        Arrays.sort(result);
         return result;
     }
 

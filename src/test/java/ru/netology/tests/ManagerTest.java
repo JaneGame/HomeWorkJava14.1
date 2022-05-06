@@ -1,7 +1,10 @@
-package ru.netology;
+package ru.netology.tests;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import ru.netology.domain.AviaTicket;
+import ru.netology.manager.ManagerTicket;
+import ru.netology.repository.RepositoryTicket;
 
 import static org.junit.jupiter.api.Assertions.*;
 
